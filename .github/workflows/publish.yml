@@ -20,6 +20,8 @@ jobs:
         # Defaults to the user or organization that owns the workflow file
         scope: '@zees-dev'
     - run: npm install
-    - run: npm publish
+    - run: npm run build
+    - run: npm run dist
+    # - run: npm publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
