@@ -5,23 +5,27 @@ on:
     branches: [ master ]
 
 jobs:
-  publish:
+  Publish:
     runs-on: ubuntu-latest 
     permissions: 
       contents: read
       packages: write 
     steps:
-    - uses: actions/checkout@v2
+    - name: checkout code
+      uses: actions/checkout@v2
     # Setup .npmrc file to publish to GitHub Packages
-    - uses: actions/setup-node@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v2
       with:
         node-version: '12.x'
         registry-url: 'https://npm.pkg.github.com'
         # Defaults to the user or organization that owns the workflow file
         scope: '@zees-dev'
-    - run: npm install
-    - run: npm run build
-    - run: npm run dist
-    # - run: npm publish
+    - name: Install dependencies
+      run: npm install
+    - name: Build project
+      run: npm run build
+    - name: Publish Node.js package to Github registry
+      run: npm run dist
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
