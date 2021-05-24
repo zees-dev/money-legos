@@ -41,7 +41,7 @@ Importing specific protocols is also supported:
 ## Install
 
 ```bash
-npm install @studydefi/money-legos
+npm install @zees-dev/money-legos
 ```
 
 ## Usage

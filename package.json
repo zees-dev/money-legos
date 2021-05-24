@@ -8,9 +8,9 @@
     "url": "https://github.com/zees-dev/money-legos.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org"
   },
-  "author": "Adrian Li <li.adrianmc@gmail.com>",
+  "author": "Zeeshan Sarwar",
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf dist",
