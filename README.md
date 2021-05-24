@@ -1,9 +1,9 @@
 # money-legos
 
 [![Node.js Package](https://github.com/zees-dev/money-legos/actions/workflows/publish.yml/badge.svg)](https://github.com/zees-dev/money-legos/actions/workflows/publish.yml)
-[![npm](https://badgen.net/npm/v/@studydefi/money-legos)](https://github.com/zees-dev/money-legos/packages/775700)
-![types](https://badgen.net/npm/types/@studydefi/money-legos)
-![minzip](https://badgen.net/bundlephobia/minzip/@studydefi/money-legos)
+[![npm](https://badgen.net/npm/v/@zees-dev/money-legos)](https://github.com/zees-dev/money-legos)
+![types](https://badgen.net/npm/types/@zees-dev/money-legos)
+![minzip](https://badgen.net/bundlephobia/minzip/@zees-dev/money-legos)
 
 ![legos autocomplete](./assets/legos-autocomplete.gif)
 
@@ -49,7 +49,7 @@ npm install @zees-dev/money-legos
 ### JavaScript
 
 ```javascript
-import { legos } from "@studydefi/money-legos";
+import { legos } from "@zees-dev/money-legos";
 
 // access ABIs and addresses
 legos.erc20.abi;
@@ -60,7 +60,7 @@ legos.uniswap.factory.abi;
 legos.uniswap.factory.address;
 
 // import only the protocol you are interested in
-import uniswap from "@studydefi/money-legos/uniswap";
+import uniswap from "@zees-dev/money-legos/uniswap";
 
 uniswap.factory.abi;
 uniswap.factory.address;
@@ -71,7 +71,7 @@ uniswap.factory.address;
 ```solidity
 pragma solidity ^0.5.0;
 
-import "@studydefi/money-legos/onesplit/contracts/IOneSplit.sol";
+import "@zees-dev/money-legos/onesplit/contracts/IOneSplit.sol";
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
